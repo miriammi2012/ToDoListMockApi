@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <h3>
+      To do List - From a mockapi.io
+      <a href="https://5be08ad4f2ef840013994bce.mockapi.io/todo">
+        data source</a
+      >
+    </h3>
+    <h5>Press F12 to see browser console output</h5>
+    <table
+      id="todoTable"
+      class="table table-bordered table-hover table-condensed"
+    >
+      <thead>
+        <!-- The header row-->
+        <tr>
+          <th>ID</th>
+          <th>Date</th>
+          <th>Name</th>
+          <th>Status</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="todoList">
+        <!-- todo task items are inserted here -->
+      </tbody>
+    </table>
+    <hr />
+    <!-- Add item form -->
+    <form class="form-inline">
+      <div class="form-group">
+        <label>Add a new item</label>
+        <input class="form-control" id="name" type="text" />
+      </div>
+      <button type="button" id="btnAdd" class="btn btn-primary">
+        Add New Item
+      </button>
+    </form>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
